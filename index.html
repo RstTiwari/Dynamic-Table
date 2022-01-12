@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /*Styling For The Page Starts From Here*/
+        body{
+    text-align: center;
+}
+.tablename{
+    border-top: 3px solid gray;
+    border-bottom: 2px solid  rgb(42, 128, 42);;
+}
+.firstrow{
+    padding:  5px;
+   
+
+}
+.lastRow{
+    border-bottom:  2px solid  rgb(20, 173, 20);;
+}
+
+table, th, td {
+  border: 1px groove rgb(153, 149, 149);
+  border-collapse: collapse;
+}
+td{
+    padding:5px;
+}
+tr{
+    margin-top: 5px;
+}
+button{
+    background-color: rgb(47, 126, 47);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 3px;
+}                    /*Styling For The Page Starts From Here*/
+    </style> 
+</head>
+<body>
+    <table id="myTable1"> <!----First  Row starts here-->
+        <tr class="tablename"> 
+            <td >Technolgy</td>
+        </tr>
+    
+        <tr style="margin-top: 10px;"> 
+            <td   style="width: 20%" rowspan="50">Application</td> <!---If More Than 50 Row need to be added Pls Change "rowspan" to required value-->
+        </tr>
+        <tr>
+          
+            <td  class="firstrow">Recruiters</td>
+            <td  class="firstrow">Joiners Target</td>
+            <td  class="firstrow">Offers Target</td>
+        </tr>
+        <tr>
+            <td><select id="cars" name="cars">
+                <option  value="name1">Sangeeta Prakash RauRane</option>
+                <option value="name2"> Sangeeta Prakash RauRane</option>
+                <option value="name3">Sangeeta Prakash RauRane</option> <!--More name option can be added here-->
+                
+    
+                </select>
+              
+            
+            
+            
+            </td>
+            <td><input value="20" type="text"></td>
+            <td><input value="30" type="text"> </td>
+        </tr>
+        <tr > 
+            <td class="lastRow"></td>
+            <td class="lastRow"></td>
+            <td  class="lastRow" style="text-align: right;"><button  type="button" onclick="newRow1()"> Add New</button></td>
+        </tr> 
+    </table>  <!----First  Row Ends here-->
+
+
+    <table id="myTable2"> <!----Second row starts  here-->
+        
+    
+        <tr style="margin-top: 10px;"> 
+            <td  style="width: 20%" rowspan="50">EBS</td> <!---If More Than 50 Row need to be added Pls Change "rowspan" to required value-->
+        </tr>
+        <tr>
+          
+            <td  class="firstrow">Recruiters</td>
+            <td  class="firstrow">Joiners Target</td>
+            <td  class="firstrow">Offers Target</td>
+        </tr>
+        <tr>
+            <td><select id="cars" name="cars">
+                <option  value="name1">Sangeeta Prakash RauRane</option>
+                <option value="name2"> Sangeeta Prakash RauRane</option>
+                <option value="name3">Sangeeta Prakash RauRane</option> <!--More name option can be added here-->
+               
+    
+                </select>
+              
+            
+            
+            
+            </td>
+            <td><input value="20" type="text"></td>
+            <td><input value="30" type="text"> </td>
+        </tr>
+        <tr > 
+            <td class="lastRow"></td>
+            <td class="lastRow"></td>
+            <td  class="lastRow" style="text-align: right;"><button  type="button" onclick="newRow2()"> Add New</button></td>
+        </tr> 
+    </table>  <!----Second row Ends   here-->
+
+    <table id="myTable3"> <!----Third  row Starts   here-->
+        
+    
+        <tr style="margin-top: 10px;"> 
+            <td  style="width: 20%" rowspan="50">Infra</td> <!---If More Than 50 Row need to be added Pls Change "rowspan" to required value-->
+        </tr>
+        <tr>
+          
+            <td  class="firstrow">Recruiters</td>
+            <td  class="firstrow">Joiners Target</td>
+            <td  class="firstrow">Offers Target</td>
+        </tr>
+        <tr>
+            <td><select id="cars" name="cars">
+                <option  value="name1">Sangeeta Prakash RauRane</option>
+                <option value="name2"> Sangeeta Prakash RauRane</option>
+                <option value="name3">Sangeeta Prakash RauRane</option> <!--More name option can be added here-->
+              
+    
+                </select>
+              
+            
+            
+            
+            </td>
+            <td><input value="20" type="text"></td>
+            <td><input value="30" type="text"> </td>
+        </tr>
+        <tr > 
+            <td class="lastRow"></td>
+            <td class="lastRow"></td>
+            <td  class="lastRow" style="text-align: right;"><button  type="button" onclick="newRow3()"> Add New</button></td>
+        </tr> 
+    </table>  <!----Third  row Ends here   here-->
+
+    <table id="myTable4"> <!----Fourth  row Starts  here-->
+        
+    
+        <tr style="margin-top: 10px;"> 
+            <td  style="width: 20%" rowspan="50">Internal</td>  <!---If More Than 50 Row need to be added Pls Change "rowspan" to required value-->
+        </tr>
+        <tr>
+          
+            <td  class="firstrow">Recruiters</td>
+            <td  class="firstrow">Joiners Target</td>
+            <td  class="firstrow">Offers Target</td>
+        </tr>
+        <tr>
+            <td><select id="cars" name="cars">
+                <option  value="name1">Sangeeta Prakash RauRane</option>
+                <option value="name2"> Sangeeta Prakash RauRane</option>
+                <option value="name3">Sangeeta Prakash RauRane</option><!--More name option can be added here--> 
+                
+    
+                </select>
+              
+            
+            
+            
+            </td>
+            <td><input value="20" type="text"></td>
+            <td><input value="30" type="text"> </td>
+        </tr>
+        <tr > 
+            <td class="lastRow"></td>
+            <td class="lastRow"></td>
+            <td  class="lastRow" style="text-align: right;"><button  type="button" onclick="newRow4()"> Add New</button></td>
+        </tr> 
+    </table>   <!----Fourth  row Ends  here-->
+
+
+    <script src="index.js">
+    
+    function newRow1() {
+    
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(4);
+    var cell1 = row.insertCell(-1);
+    var cell2 = row.insertCell(1)
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = "<select> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option>s </select>";
+    cell2.innerHTML = "<input value='20'>";
+    cell3.innerHTML = "<input value='30'>";
+     
+  
+   
+    }
+    function newRow2() {
+    
+    var table = document.getElementById("myTable2");
+    var row = table.insertRow(3);
+    var cell1 = row.insertCell(-1);
+    var cell2 = row.insertCell(1)
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = "<select> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option>s </select>";
+    cell2.innerHTML = "<input value='20'>";
+    cell3.innerHTML = "<input value='30'>";
+     
+  
+   
+    }
+    function newRow3() {
+    
+    var table = document.getElementById("myTable3");
+    var row = table.insertRow(3);
+    var cell1 = row.insertCell(-1);
+    var cell2 = row.insertCell(1)
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = "<select> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option>s </select>";
+    cell2.innerHTML = "<input value='20'>";
+    cell3.innerHTML = "<input value='30'>";
+     
+  
+   
+    }
+    function newRow4() {
+    
+    var table = document.getElementById("myTable4");
+    var row = table.insertRow(3);
+    var cell1 = row.insertCell(-1);
+    var cell2 = row.insertCell(1)
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = "<select> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option> <option >Sangeeta Prakash RauRane</option>s </select>";
+    cell2.innerHTML = "<input value='20'>";
+    cell3.innerHTML = "<input value='30'>";
+     
+  
+   
+    }
+
+
+    </script>
+    
+</body>
+</html>
